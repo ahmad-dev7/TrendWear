@@ -22,7 +22,7 @@ exports.login = async (req, res, next) => {
         const token = await UserServices.generateToken(
           tokenData,
           "BlocCubitSecret",
-          "1m"
+          "10m"
         );
 
         return res.status(200).json({ status: true, token: token });
