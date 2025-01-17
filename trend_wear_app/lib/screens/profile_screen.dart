@@ -14,44 +14,46 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  String? name = kSharedPreferences.getString("name");
+  String? email = kSharedPreferences.getString("email");
+  void logoutDialog() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => CupertinoAlertDialog(
+        insetAnimationDuration: Durations.medium1,
+        insetAnimationCurve: Curves.decelerate,
+        title: const Text("Are you sure!"),
+        content: const Text("You want to logout"),
+        actions: [
+          CupertinoDialogAction(
+            isDestructiveAction: true,
+            child: const Text("Logout"),
+            onPressed: () {
+              kSharedPreferences.clear().then((_) {
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const LoginSignupScreen()));
+                context.read<BottomNavigationCubit>().updateIndex(1);
+              });
+            },
+          ),
+          CupertinoDialogAction(
+            isDefaultAction: true,
+            onPressed: () => Navigator.pop(context),
+            textStyle: const TextStyle(color: Colors.black87, fontSize: 16),
+            child: const Text("Cancel"),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    void logoutDialog() {
-      showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (context) => CupertinoAlertDialog(
-          insetAnimationDuration: Durations.medium1,
-          insetAnimationCurve: Curves.decelerate,
-          title: const Text("Are you sure!"),
-          content: const Text("You want to logout"),
-          actions: [
-            CupertinoDialogAction(
-              isDestructiveAction: true,
-              child: const Text("Logout"),
-              onPressed: () {
-                kSharedPreferences.clear().then((_) {
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const LoginSignupScreen()));
-                  context.read<BottomNavigationCubit>().updateIndex(1);
-                });
-              },
-            ),
-            CupertinoDialogAction(
-              isDefaultAction: true,
-              onPressed: () => Navigator.pop(context),
-              textStyle: const TextStyle(color: Colors.black87, fontSize: 16),
-              child: const Text("Cancel"),
-            ),
-          ],
-        ),
-      );
-    }
-
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          "Hello".text.makeCentered(),
+          "Hello, $name".text.makeCentered(),
           const HeightBox(20),
           CupertinoButton(
             minSize: 20,

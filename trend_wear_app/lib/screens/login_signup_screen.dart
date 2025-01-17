@@ -48,7 +48,8 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
 
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(kScreenMargin),
+        // Except bottom, from all sides [kScreenMargin]
+        padding: EdgeInsets.fromLTRB(kScreenMargin, kScreenMargin, kScreenMargin, 0),
         child: SingleChildScrollView(
           child: FadeInDown(
             from: 200,

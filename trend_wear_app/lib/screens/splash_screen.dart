@@ -15,15 +15,13 @@ class SplashScreen extends StatefulWidget {
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
+class _SplashScreenState extends State<SplashScreen> {
   bool isAuthenticated = false;
   bool isTokenNull = true;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(vsync: this);
     checkUserToken();
   }
 
@@ -85,12 +83,8 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         children: [
           Lottie.asset(
             'assets/animations/shopping_trolly.json',
-            controller: _controller,
-            onLoaded: (composition) {
-              _controller.duration = composition.duration;
-              _controller.forward();
-              Future.delayed(composition.duration * 0.7).then((value) => navigateUser());
-            },
+            repeat: true,
+            onLoaded: (composition) => Future.delayed(composition.duration * 0.7).then((value) => navigateUser()),
           ),
           SlideInLeft(
             delay: const Duration(milliseconds: 300), // Adjust delay for animation
@@ -99,11 +93,5 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         ],
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
   }
 }
