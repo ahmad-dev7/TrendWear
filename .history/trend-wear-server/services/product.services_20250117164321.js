@@ -14,24 +14,9 @@ class ProductServices {
     return await product.save();
   }
 
-  static async getProducts(category, id) {
+  static async getProducts(category) {
     try {
-      // Initialize an empty filter object
-      const filter = {};
-
-      // Add conditions to the filter based on the parameters
-      if (category) {
-        // Match products whose `category` array contains the given category (case-insensitive)
-        filter.category = { $regex: new RegExp(`^${category}$`, "i") };
-      }
-      if (id) {
-        // Match products with the specified `_id`
-        filter._id = id;
-      }
-
-      // Fetch products based on the filter
-      const products = await ProductModel.find(filter);
-
+      const products = await ProductModel.find();
       return products;
     } catch (err) {
       console.error("Error getting products:", err);

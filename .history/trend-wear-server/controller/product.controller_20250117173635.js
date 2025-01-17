@@ -18,7 +18,7 @@ exports.addProduct = async (req, res, next) => {
 exports.getProducts = async (req, res, next) => {
   const { category, id } = req.query;
   try {
-    const products = await ProductServices.getProducts(category, id);
+    const products = await ProductServices.getProducts();
     if (!products || products.length === 0) {
       res.status(404).json({ message: "No products found" });
     } else {

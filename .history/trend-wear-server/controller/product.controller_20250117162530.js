@@ -15,20 +15,20 @@ exports.addProduct = async (req, res, next) => {
   }
 };
 
-exports.getProducts = async (req, res, next) => {
-  const { category, id } = req.query;
+exports.getProduct = async (req, res, next) => {
   try {
-    const products = await ProductServices.getProducts(category, id);
-    if (!products || products.length === 0) {
-      res.status(404).json({ message: "No products found" });
+    const category = req.params.category;
+    const product = await ProductServices.getProduct(category);
+    if (!product) {
+      res.status(404).json({ message: "Product not found" });
     } else {
-      res.status(200).json({ message: "Success", products });
+      res.status(200).json({ message: "Success", product });
     }
   } catch (err) {
     res
       .status(500)
-      .json({ message: "Failed to get products", error: err.message });
-    console.error("Error getting products:", err);
+      .json({ message: "Failed to get product", error: err.message });
+    console.error("Error getting product:", err);
     next(err);
   }
 };
