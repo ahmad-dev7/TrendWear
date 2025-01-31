@@ -1,0 +1,17 @@
+body {
+    background-color: #F9FAFB;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+#sidebar {
+    background-color: white;
+    width: 280px;
+    height: 100vh;
+    padding: 12px 0px 12px 0px;
+    border-width: 1px;
+    border-color: red;
+}

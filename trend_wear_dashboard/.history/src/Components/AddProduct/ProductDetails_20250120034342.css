@@ -1,0 +1,11 @@
+.product-detail-container {
+    margin: 0px;
+    padding: 24px;
+    text-align: start;
+}
+
+.img-container {
+    height: 50px;
+    width: 100px;
+    background-color: lightblue;
+}

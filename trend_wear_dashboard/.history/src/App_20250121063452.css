@@ -1,0 +1,20 @@
+body {
+    background-color: #F9FAFB;
+    padding: 20px;
+    border-color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#parent {
+    display: flex;
+}
+
+.themeData {
+    background-color: #F9FAFB;
+    border-color: #e5e7eb;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 24px;
+    font-family: sans-serif;
+}

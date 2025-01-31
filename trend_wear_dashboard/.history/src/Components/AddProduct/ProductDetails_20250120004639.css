@@ -1,0 +1,13 @@
+.parent {
+    margin: 0px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}

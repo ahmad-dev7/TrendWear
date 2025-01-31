@@ -1,0 +1,17 @@
+.product-detail {
+    margin: 0px;
+}
+
+.heading {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+.container {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+}

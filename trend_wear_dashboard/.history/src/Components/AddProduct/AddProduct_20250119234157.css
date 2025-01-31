@@ -1,0 +1,25 @@
+.parent {
+    display: flex;
+    /* Enable flexbox layout */
+    background-color: red;
+    /* For debugging */
+    height: 100px;
+    /* Fixed height for parent */
+    width: 100%;
+    /* Ensure it spans the full width of the container */
+    box-sizing: border-box;
+    /* Ensure padding and borders are included in dimensions */
+}
+
+.child {
+    flex: 1;
+    /* Distribute space equally between children */
+    padding: 10px;
+    /* Optional spacing */
+    text-align: center;
+    /* Center the text inside */
+    border: 1px solid #ccc;
+    /* Optional border for visibility */
+    box-sizing: border-box;
+    /* Ensures padding doesn't overflow */
+}

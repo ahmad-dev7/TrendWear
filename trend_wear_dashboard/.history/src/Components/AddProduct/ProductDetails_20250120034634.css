@@ -1,0 +1,14 @@
+.product-detail-container {
+    margin: 0px;
+    padding: 24px;
+    text-align: start;
+}
+
+.img-container {
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F9FAFB;
+}

@@ -1,0 +1,44 @@
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 75px;
+    width: 100vw;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.add-product-button {
+    color: white;
+    background-color: #ff8005;
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+    flex-grow: 1;
+    margin-left: 16px;
+    max-width: 400px;
+}
+
+#top-navbar img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+#content-body {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}

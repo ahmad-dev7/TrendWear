@@ -1,0 +1,41 @@
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 24px; */
+    background-color: white;
+    height: 75px;
+    width: calc(100% - 280px);
+    left: 281px;
+    position: fixed;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    width: 200px;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.add-product-button {
+    color: white;
+    margin-left: 24px;
+    background-color: #ff8005;
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+#top-navbar .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 24px;
+}

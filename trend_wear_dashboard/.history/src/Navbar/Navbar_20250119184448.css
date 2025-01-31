@@ -1,0 +1,28 @@
+/* Navbar.css */
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+.add-product-button {
+    width: 200px;
+    background-color: #ff8005;
+    color: white;
+    padding: 12px;
+}

@@ -1,0 +1,25 @@
+body {
+    background-color: #F9FAFB;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+hr {}
+
+
+#sidebar {
+    background-color: white;
+    width: 280px;
+    height: 99vh;
+    padding: 12px 0px 12px 0px;
+    border-right-width: 2px;
+    border-color: red;
+}
+
+#sidebar .header {
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+}

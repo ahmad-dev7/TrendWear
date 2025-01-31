@@ -1,0 +1,13 @@
+#body-content {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    max-width: calc(100% - (280px + 48px));
+    /*  Adding   */
+    /* margin-left: 280px;
+    width: calc(100% - 580px); */
+    /*  Adding   */
+    height: 100vh;
+    width: calc(100% - 48px);
+    box-sizing: border-box;
+}

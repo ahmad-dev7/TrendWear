@@ -1,0 +1,17 @@
+body {
+    background-color: #F9FAFB;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#parent {
+    display: flex;
+    columns: 2;
+}
+
+.test {
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}

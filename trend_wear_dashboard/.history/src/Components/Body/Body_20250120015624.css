@@ -1,0 +1,8 @@
+#body-content {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    width: calc(100% - 24px);
+    /* Subtracted margin */
+    box-sizing: border-box;
+}

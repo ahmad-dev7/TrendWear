@@ -1,0 +1,13 @@
+.details-section-container-heading {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.details-section-container {
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}

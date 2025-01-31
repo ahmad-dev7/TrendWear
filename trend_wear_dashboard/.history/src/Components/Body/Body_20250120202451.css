@@ -1,0 +1,22 @@
+#body-content {
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    /* To make content body at center */
+    top: 75px;
+    left: 280px;
+    position: relative;
+    max-width: calc(100% - (280px + 48px));
+    /* To make content body at center */
+    height: 100vh;
+    width: calc(100% - 48px);
+    box-sizing: border-box;
+}
+
+/* #body-content>div {
+    display: none;
+}
+
+#body-content>.active {
+    display: flex;
+} */

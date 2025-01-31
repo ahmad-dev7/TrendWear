@@ -1,0 +1,25 @@
+/* AddProduct.css */
+.parent {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    box-sizing: border-box;
+}
+
+.child {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.preview-container {
+    height: 300px;
+}
+
+#submit-product-button {
+    height: 40px;
+    background-color: orange;
+    border-radius: 8px;
+}

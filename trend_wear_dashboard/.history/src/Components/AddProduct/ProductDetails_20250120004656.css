@@ -1,0 +1,11 @@
+.parent {
+    margin: 0px;
+    padding: 24px;
+}
+
+.heading {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}

@@ -1,0 +1,15 @@
+/* AddProduct.css */
+.parent {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 24px;
+    flex-direction: row;
+}
+
+.child {
+    flex: 1;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+}

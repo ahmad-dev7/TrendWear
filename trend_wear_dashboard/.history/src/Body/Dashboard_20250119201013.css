@@ -1,0 +1,10 @@
+#content-body {
+    height: 500px;
+    margin: 24px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

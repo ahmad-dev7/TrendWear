@@ -1,0 +1,103 @@
+/* #top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.add-product-button {
+    color: white;
+    background-color: #ff8005;
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+    flex-grow: 1;
+    margin-left: 16px;
+    max-width: 400px;
+}
+
+#top-navbar img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+#content-body {
+    height: 500px;
+    width: 100%;
+    background-color: red;
+} */
+
+
+/* Navbar.css */
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+    position: fixed;
+    /* Keeps navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* Ensure it stays above other elements */
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.add-product-button {
+    color: white;
+    background-color: #ff8005;
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+    flex-grow: 1;
+    /* Makes input field take up all available space */
+    margin-left: 16px;
+    /* Adds spacing between input and adjacent elements */
+    max-width: 400px;
+}
+
+#top-navbar img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+/* Content Body Below Navbar */
+#content-body {
+    height: calc(100vh - 75px);
+    /* Subtract the height of the navbar */
+    width: 100%;
+    background-color: red;
+    margin-top: 75px;
+    /* Adds space for the fixed navbar */
+}

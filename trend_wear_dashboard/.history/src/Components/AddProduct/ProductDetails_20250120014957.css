@@ -1,0 +1,15 @@
+.parent {
+    margin: 0px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Optional spacing between children */
+}
+
+.heading {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}

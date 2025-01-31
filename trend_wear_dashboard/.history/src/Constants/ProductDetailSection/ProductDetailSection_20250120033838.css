@@ -1,0 +1,13 @@
+#details-section-container-heading {
+    margin: 0px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#details-section-container {
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}

@@ -1,0 +1,28 @@
+.parent {
+    display: flex;
+    width: 100%;
+    /* Full width of the parent container */
+    height: 100px;
+    /* Explicit height to make it visible */
+    background-color: red;
+    /* Set a visible color */
+    box-sizing: border-box;
+    /* Include padding and borders in dimensions */
+}
+
+.parent {
+    background-color: red !important;
+}
+
+.child {
+    flex: 1;
+    /* Distribute space equally between children */
+    padding: 10px;
+    /* Optional spacing */
+    text-align: center;
+    /* Center the text inside */
+    border: 1px solid #ccc;
+    /* Optional border for visibility */
+    box-sizing: border-box;
+    /* Ensures padding doesn't overflow */
+}

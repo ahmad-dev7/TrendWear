@@ -1,0 +1,28 @@
+/* #content-body {
+    margin: 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+} */
+
+#content-body {
+    display: flex;
+    /* This ensures its children align flexibly */
+    flex-direction: column;
+    /* Default to stacking children vertically */
+    margin: 24px;
+    /* Space around the container */
+    padding: 12px;
+    /* Internal spacing */
+    height: 100vh;
+    /* Make the body take full viewport height */
+    width: calc(100% - 48px);
+    /* Adjust width accounting for margin (optional) */
+    background-color: #f8f8f8;
+    /* Optional: Add a background color for visibility */
+    box-sizing: border-box;
+    /* Ensure padding does not overflow the container */
+}

@@ -1,0 +1,27 @@
+.product-detail-container {
+    margin: 0px;
+    padding: 24px;
+    text-align: start;
+}
+
+/* Product details sub-sections heading */
+.heading {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+/* Product details sub-sections container */
+.container {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    background-color: red;
+    border-radius: 8px;
+}
+
+
+p:not(.heading) {
+    margin: 0px;
+    margin-bottom: 10px;
+}

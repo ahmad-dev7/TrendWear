@@ -1,0 +1,87 @@
+/* body {
+    background-color: #F9FAFB;
+    padding: 0;
+    margin: 0;
+    border-color: #e5e7eb;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#parent {
+    display: flex;
+} */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Main App Container */
+.app {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #f4f4f4;
+    border-right: 1px solid #e5e7eb;
+    z-index: 1000;
+}
+
+/* Main Layout (Navbar + Content) */
+.main-layout {
+    margin-left: 250px;
+    /* Offset for the sidebar width */
+    width: calc(100% - 250px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    /* Offset to start after the sidebar */
+    height: 75px;
+    width: calc(100% - 250px);
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Content Section */
+.content-section {
+    margin: 24px;
+    /* 24px margin on all sides */
+    margin-top: 99px;
+    /* Offset for the fixed navbar height (75px + 24px) */
+    padding: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    height: 1100px;
+    /* Ensures it stretches to take available space */
+    /* min-height: calc(100vh - 99px - 24px); */
+    /* Full height minus margins and navbar */
+    overflow: auto;
+    /* Scrollable if content overflows */
+}

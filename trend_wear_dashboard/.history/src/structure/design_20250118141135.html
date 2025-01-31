@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#F07D0E"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-gray-50 font-[Inter]">
+    <div class="min-h-screen flex">
+        <aside class="w-64 bg-white border-r border-gray-200 fixed h-full">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8">
+            </div>
+            <nav class="mt-6">
+                <a href="#" class="flex items-center px-6 py-3 bg-custom text-white"> <i
+                        class="fas fa-th-large w-5"></i>
+                    <span class="mx-3">Dashboard</span>
+                </a> <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-shopping-cart w-5"></i>
+                    <span class="mx-3">Orders</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50"> <i
+                        class="fas fa-box w-5"></i>
+                    <span class="mx-3">Products</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50"> <i
+                        class="fas fa-users w-5"></i>
+                    <span class="mx-3">Customers</span>
+                </a> <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50">
+                    <i class="fas fa-chart-bar w-5"></i>
+                    <span class="mx-3">Analytics</span>
+                </a>
+                <a href="#" class="flex items-center px-6 py-3 text-gray-600 hover:bg-gray-50"> <i
+                        class="fas fa-cog w-5"></i>
+                    <span class="mx-3">Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="flex-1 ml-64">
+            <header class="bg-white border-b border-gray-200">
+                <div class="px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center flex-1">
+                        <div class="relative w-64">
+                            <input type="text" placeholder="Search..."
+                                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-custom">
+                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="relative !rounded-button p-2 text-gray-600 hover:bg-gray-100"> <i
+                                class="fas fa-bell"></i>
+                            <span class="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
+                        </button>
+                        <div class="relative">
+                            <button class="flex items-center space-x-3 !rounded-button"> <img
+                                    src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young business person with a friendly smile, wearing formal attire, against a neutral background&width=40&height=40&flag=6884693b-9177-4cc6-b466-63647bc766b5"
+                                    class="w-8 h-8 rounded-full object-cover" alt="Profile"> <span
+                                    class="text-sm font-medium text-gray-700">John Doe</span>
+                                <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="p-6">
+                <div class="grid grid-cols-4 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500">Total Sales</p>
+                                <h3 class="text-2xl font-semibold mt-1">$84,254</h3>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-dollar-sign text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-4"> <i class="fas fa-arrow-up text-green-500 mr-1"></i>
+                            <span class="text-green-500 text-sm">8.2%</span>
+                            <span class="text-gray-400 text-sm ml-2">vs last month</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500">Total Orders</p>
+                                <h3 class="text-2xl font-semibold mt-1">1,463</h3>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"> <i
+                                    class="fas fa-shopping-bag text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <i class="fas fa-arrow-up text-green-500 mr-1"></i>
+                            <span class="text-green-500 text-sm">5.3%</span>
+                            <span class="text-gray-400 text-sm ml-2">vs last month</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500">Active Users</p>
+                                <h3 class="text-2xl font-semibold mt-1">12,849</h3>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-users text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-4"> <i class="fas fa-arrow-down text-red-500 mr-1"></i>
+                            <span class="text-red-500 text-sm">2.8%</span>
+                            <span class="text-gray-400 text-sm ml-2">vs last month</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-500">Revenue</p>
+                                <h3 class="text-2xl font-semibold mt-1">$24,563</h3>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"> <i
+                                    class="fas fa-chart-line text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <i class="fas fa-arrow-up text-green-500 mr-1"></i>
+                            <span class="text-green-500 text-sm">12.5%</span>
+                            <span class="text-gray-400 text-sm ml-2">vs last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-semibold">Sales Overview</h3>
+                            <select class="border border-gray-300 rounded-lg text-sm px-3 py-2 !rounded-button">
+                                <option>Last 7 days</option>
+                                <option>Last 30 days</option>
+                                <option>Last 90 days</option>
+                            </select>
+                        </div>
+                        <div id="salesChart" class="h-80"></div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg border border-gray-200">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-semibold">Revenue Distribution</h3>
+                            <select class="border border-gray-300 rounded-lg text-sm px-3 py-2 !rounded-button">
+                                <option>This Month</option>
+                                <option>Last Month</option>
+                                <option>This Year</option>
+                            </select>
+                        </div>
+                        <div id="revenueChart" class="h-80"></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <h3 class="font-semibold">Recent Orders</h3>
+                            <button class="px-4 py-2 bg-custom text-white !rounded-button">View All</button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="bg-gray-50">
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Order ID</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Customer</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Product</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Date</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Status</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Amount</th>
+                                    <th
+                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">#ORD-1234</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center"> <img
+                                                src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young woman with a confident smile, wearing business attire, against a neutral background&width=40&height=40&flag=fbfbe559-51d5-4156-9e7d-887ccffe4d56"
+                                                class="w-8 h-8 rounded-full" alt="">
+                                            <div class="ml-3">
+                                                <p class="text-sm font-medium text-gray-900">Sarah Johnson</p>
+                                                <p class="text-sm text-gray-500">sarah@example.com</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">iPhone 13 Pro</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Oct 24, 2023</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$999.00</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <button class="text-custom hover:text-custom-dark !rounded-button">View
+                                            Details</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">#ORD-1235</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a middle-aged man with glasses, wearing a suit, against a neutral background&width=40&height=40&flag=7174e56a-b9fc-40de-acdb-611573239ccf"
+                                                class="w-8 h-8 rounded-full" alt="">
+                                            <div class="ml-3">
+                                                <p class="text-sm font-medium text-gray-900">Michael Brown</p>
+                                                <p class="text-sm text-gray-500">michael@example.com</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">MacBook Pro</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Oct 23, 2023</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span
+                                            class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">$1,299.00</td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm">
+                                        <button class="text-custom hover:text-custom-dark !rounded-button">View
+                                            Details</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        const salesChart = echarts.init(document.getElementById('salesChart'));
+        const revenueChart = echarts.init(document.getElementById('revenueChart'));
+
+        const salesOption = {
+            animation: false,
+            tooltip: {
+                trigger: 'axis'
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line',
+                smooth: true,
+                lineStyle: {
+                    color: '#1E40AF'
+                },
+                areaStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(30, 64, 175, 0.3)'
+                    }, {
+                        offset: 1,
+                        color: 'rgba(30, 64, 175, 0.1)'
+                    }])
+                }
+            }]
+        };
+
+        const revenueOption = {
+            animation: false,
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                orient: 'horizontal',
+                bottom: 'bottom'
+            },
+            series: [{
+                name: 'Revenue',
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 10,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: '20',
+                        fontWeight: 'bold'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [
+                    { value: 1048, name: 'Online Sales' },
+                    { value: 735, name: 'Retail Sales' },
+                    { value: 580, name: 'Direct Sales' },
+                    { value: 484, name: 'Other' }
+                ]
+            }]
+        };
+
+        salesChart.setOption(salesOption);
+        revenueChart.setOption(revenueOption);
+
+        window.addEventListener('resize', function () {
+            salesChart.resize();
+            revenueChart.resize();
+        });
+    </script>
+</body>
+
+</html>

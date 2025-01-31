@@ -1,0 +1,22 @@
+/* Ensure the parent container takes the full width of the viewport */
+.parent {
+    background-color: red;
+    height: 200px;
+    display: flex;
+    /* Enable flexbox layout */
+    width: 100%;
+    /* Ensure it takes up full available width */
+}
+
+.child {
+    flex: 1;
+    /* Each child will take up equal space */
+    padding: 10px;
+    /* Optional: Add padding for spacing */
+    box-sizing: border-box;
+    /* Ensures padding does not overflow the element */
+    text-align: center;
+    /* Optional: Centers the content inside the children */
+    border: 1px solid #ccc;
+    /* Optional: Adds a border for visual separation */
+}

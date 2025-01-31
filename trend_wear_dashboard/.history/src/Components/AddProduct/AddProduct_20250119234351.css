@@ -1,0 +1,20 @@
+/* AddProduct.css */
+.parent {
+    display: flex;
+    width: 100%;
+    /* Full width */
+    height: 100px;
+    /* Fixed height */
+    background-color: red;
+    /* Visible debug color */
+    box-sizing: border-box;
+}
+
+.child {
+    flex: 1;
+    /* Equal width for children */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Optional border for debugging */
+}

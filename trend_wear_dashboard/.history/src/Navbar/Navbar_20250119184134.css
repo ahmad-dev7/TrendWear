@@ -1,0 +1,25 @@
+/* Navbar.css */
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-item {
+    font-size: 16px;
+    /* Optional: Define font size for items */
+    color: #333;
+    /* Optional: Set text color */
+    text-decoration: none;
+    /* Ensures no underline for links */
+    cursor: pointer;
+    /* Adds pointer cursor on hover */
+}
+
+.nav-item:hover {
+    color: #007bff;
+}

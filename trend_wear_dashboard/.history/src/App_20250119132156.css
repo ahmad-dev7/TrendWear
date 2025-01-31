@@ -1,0 +1,15 @@
+body {
+    background-color: #F9FAFB;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+* {
+    margin: 24px;
+}
+
+#sidebar {
+    background-color: white;
+    width: 280px;
+}

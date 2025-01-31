@@ -1,0 +1,63 @@
+/* Navbar.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding/borders don't affect width/height */
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    /* Prevents horizontal scrollbars if elements overflow */
+}
+
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    /* Ensures it spans full width */
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.add-product-button {
+    color: white;
+    background-color: #ff8005;
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+    flex-grow: 1;
+    /* Makes the input take all available space */
+    margin-left: 16px;
+    /* Adds spacing between input and adjacent elements */
+    max-width: 400px;
+    /* Optional: limit input width */
+}
+
+#top-navbar img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
+
+#content-body {
+    height: 500px;
+    width: 100%;
+    /* Ensures it spans full width */
+    background-color: red;
+}

@@ -1,0 +1,58 @@
+/* Sidebar body */
+#sidebar {
+    background-color: white;
+    width: 280px;
+    height: 100vh;
+    border-right: 1px solid #e5e7eb;
+}
+
+/* Header with title [Trend Wear] */
+#sidebar .header {
+    display: flex;
+    /* Ensures proper alignment */
+    justify-content: center;
+    /* Centers the text horizontally */
+    align-items: center;
+    /* Centers the text vertically */
+    height: 75px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 24px;
+    /* Matches the navbar horizontal padding */
+    background-color: #f8f9fa;
+    /* Optional: Matches the navbar background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow similar to the navbar */
+    text-align: center;
+}
+
+/* Divider between header and navbar */
+#sidebar hr {
+    border-top: 1px solid #e5e7eb;
+}
+
+#sidebar-content {
+    list-style-type: none;
+    margin-top: 24px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#sidebar-content .tab {
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+#sidebar-content .active {
+    background-color: #3c3c3c;
+    color: white;
+}
+
+#sidebar-content .tab:hover:not(.active) {
+    background-color: #eaeaea;
+}

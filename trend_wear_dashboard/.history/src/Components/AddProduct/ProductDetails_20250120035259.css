@@ -1,0 +1,27 @@
+.product-detail-container {
+    margin: 0px;
+    padding: 24px;
+    text-align: start;
+}
+
+/* Parent container to hold the items in a row */
+.picture-container-parent {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: space-between;
+    /* Optional: space between items, adjust as needed */
+    gap: 16px;
+    /* Optional: adds space between items */
+}
+
+/* Style for each img-container */
+.img-container {
+    flex: 1;
+    /* Adjust width as needed */
+    height: 100px;
+    /* Adjust height as needed */
+    background-color: #e5e7eb;
+    /* Optional: background color */
+    border-radius: 8px;
+    text-align: center;
+}

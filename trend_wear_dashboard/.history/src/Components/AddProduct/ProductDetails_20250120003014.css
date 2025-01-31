@@ -1,0 +1,10 @@
+.parent {
+    margin: 0px;
+    padding: 24px;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: sans-serif;
+}

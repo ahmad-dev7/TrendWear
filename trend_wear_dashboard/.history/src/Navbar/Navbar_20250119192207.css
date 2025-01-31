@@ -1,0 +1,52 @@
+/* Navbar.css */
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    font-size: 16px;
+    color: #333;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+.add-product-button {
+    color: white;
+    background-color: #ff8005;
+
+}
+
+#top-navbar input {
+    border: none;
+    outline: 2px solid #e5e7eb;
+}
+
+#top-navbar img {
+    width: 200px;
+    /* Matches the width of .nav-item */
+    height: auto;
+    /* Ensures proper aspect ratio */
+    object-fit: contain;
+    /* Keeps the image proportional */
+    border-radius: 8px;
+    /* Same rounded corners as .nav-item */
+    padding: 14px;
+    /* Matches the padding of .nav-item */
+    text-align: center;
+    /* Aligns content in center */
+    background-color: transparent;
+    /* Optional: Transparent background */
+    display: block;
+    /* Ensures the image behaves like a block-level element */
+}

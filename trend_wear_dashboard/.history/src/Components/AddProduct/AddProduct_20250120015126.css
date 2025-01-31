@@ -1,0 +1,28 @@
+/* AddProduct.css */
+.parent {
+    display: flex;
+    /* Enable flexbox layout */
+    width: 100%;
+    /* Full available width */
+    height: 100px;
+    /* Fixed height */
+    background-color: red;
+    /* Visible debug color */
+    box-sizing: border-box;
+    /* Include padding and border in dimensions */
+    gap: 24px;
+    /* Add 24px space between children */
+}
+
+.child {
+    flex: 1;
+    /* Each child takes equal space */
+    padding: 10px;
+    /* Optional: Internal padding for content */
+    text-align: center;
+    /* Optional: Center align content */
+    border: 1px solid #ccc;
+    /* Optional: Border for debugging */
+    box-sizing: border-box;
+    /* Ensure padding doesn’t overflow */
+}

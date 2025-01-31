@@ -1,0 +1,16 @@
+#top-navbar {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-item {
+    width: 100;
+    height: 100%;
+    background-color: rebeccapurple;
+    display: inline;
+    justify-content: space-around;
+}

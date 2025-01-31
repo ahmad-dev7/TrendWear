@@ -1,0 +1,32 @@
+.product-detail-container {
+    margin: 0px;
+    padding: 24px;
+    text-align: start;
+}
+
+
+p:not(.heading) {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+
+.title-input,
+.description-input {
+    border: none;
+    outline: none;
+    width: calc(100% - 15px);
+    height: 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    padding-left: 12px;
+    background-color: #e5e7eb;
+}
+
+.description-input {
+    height: 75px;
+    width: calc(100% - 24px);
+    padding: 12px;
+}
